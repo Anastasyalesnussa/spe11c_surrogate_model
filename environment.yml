@@ -1,0 +1,35 @@
+name: decarbonization-ml
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - plotly
+  - jupyterlab
+  - ipykernel
+  - pyarrow
+  - pip
+
+  # Energy transition / geospatial related
+  - geopandas
+  - shapely
+  - rasterio
+
+  # Optimization / surrogate modeling
+  - sympy
+  - statsmodels
+
+  - pip:
+      - xgboost
+      - lightgbm
+      - catboost
+      - optuna
+      - pykrige
+      - pyDOE2
