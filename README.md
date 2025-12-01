@@ -94,7 +94,7 @@ Targets:
 ---
 
 ## 5. Results Summary
-| Model                     | RMSE ↓     | R² ↑        |
+| Model                     | RMSE       | R²          |
 | ------------------------- | ---------- | ----------- |
 | LinearRegression_baseline | **4.24**   | **1.0000**  |
 | RandomForest_baseline     | 17,577     | 0.99997     |
