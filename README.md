@@ -2,6 +2,7 @@
 
 ### **Abstract**
 Geological carbon storage plays a critical role in global decarbonization, yet full 3D reservoir simulations remain computationally intensive for evaluating CO₂ injection performance across multiple scenarios. This work develops a machine-learning surrogate model for the SPE CSP 11C field-scale benchmark, aiming to predict CO₂ storage performance with significantly reduced computation time. A complete workflow is implemented — from preprocessing and physics-aware feature engineering to model benchmarking — and multiple regression methods are evaluated, including Linear Regression, Random Forest, Gradient Boosting, and a Multilayer Perceptron (MLP). Results show that the MLP surrogate achieves the highest predictive accuracy while preserving key reservoir dynamics represented in the simulation outputs. The final surrogate provides rapid prediction capability suitable for scenario screening and sensitivity analysis, demonstrating the practical potential of data-driven models to complement classical numerical reservoir simulation in carbon capture and storage applications.
+
 ---
 
 ## 1. Research Objectives
