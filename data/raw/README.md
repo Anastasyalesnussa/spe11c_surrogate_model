@@ -1,4 +1,4 @@
-## 📥 Data Access & Download Instructions
+## Data Access & Download Instructions
 
 This repository **does not include raw CO₂ storage datasets** because the SPE11C files exceed GitHub’s upload limits (25–1000 MB) and cannot be redistributed due to licensing.  
 To reproduce all results, download the datasets from the official sources Society of Petroleum Engineers (SPE). [SPE Comparative Solution Project — Model 11C (3D CO₂ Injection)](https://spe.org/en/csp/spe11/ )
@@ -19,5 +19,6 @@ After downloading, extract all files into:
 ´´´
 data/raw/spe11c/
 ´´´
+
 
 
