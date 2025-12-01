@@ -176,6 +176,7 @@ spe11c_surrogate_model/
 │   ├── 06_Visualization_Results.ipynb # Spatial & temporal prediction visualization
 │   └── feature.ipynb                # Sandbox/experimentation
 │
+├── requirements.txt
 ├── environment.yml                  # Replicable conda environment
 └── README.md
 
