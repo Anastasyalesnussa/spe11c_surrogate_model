@@ -6,11 +6,12 @@ Geological carbon storage plays a critical role in global decarbonization, yet f
 ---
 
 ## 1. Research Objectives
-- Transform simulation outputs into ML-ready features through preprocessing and physics-aware feature engineering.
-- Benchmark multiple regression models (Linear Regression, Random Forest, Gradient Boosting, and MLP) to assess their capability in predicting CO₂ storage performance.
-- Develop an optimized neural-network-based surrogate model that maintains high predictive accuracy while reducing computation time compared to full reservoir simulation.
-- Evaluate model generalization and reliability using quantitative performance metrics and cross-scenario testing.
-- Demonstrate practical applicability of the surrogate model for rapid scenario screening and sensitivity analysis in CCS workflows.
+- Convert high-fidelity SPE11C reservoir simulation outputs into ML-ready inputs using physics-aware preprocessing (spatial binning, interpolation, and engineered features such as normalized depth, density ratio, and CO₂ fraction).
+- Construct and compare regression baselines (Linear Regression, Random Forest, Gradient Boosting) and neural network surrogates (MLP) to quantify trade-offs in accuracy, interpretability, and runtime.
+- Develop an optimized MLP surrogate that reproduces simulator pressure fields with high fidelity while reducing compute time by several orders of magnitude.
+- Rigorously evaluate surrogate generalization using hold-out testing, residual analysis, and cross-scenario checks (different timesteps / grid cells / injection conditions).
+- Provide physically interpretable diagnostics (SHAP and Partial Dependence Plots) to demonstrate that the surrogate captures known reservoir physics and to identify the most important control variables for pressure evolution.
+- Deliver a reproducible, publication-ready analysis and figure set to support rapid scenario screening, uncertainty quantification, and decision support for CCS planning.
 
 ---
 
@@ -108,16 +109,15 @@ The final surrogate neural network generalizes well across the SPE11C dataset wi
 ---
 
 ## 6. Scientific Impact
-The developed surrogate:
-- Reduces simulation time from hours to milliseconds
-- Preserves physical behavior & plume evolution trends
-- Can support decision-making in CCS development
+The surrogate model developed in this work delivers rapid, physically coherent approximations of reservoir pressure that enable:
+- Massive speed-up: evaluate scenarios in milliseconds versus hours for full numerical simulators — enabling real-time scenario exploration and optimization.
+- Physics-consistent predictions: feature importance (SHAP) and PDP analyses show the model respects core physics drivers (pressure, temperature, normalized depth, fluid density ratios and CO₂ fraction), increasing trust for engineering use.
+- Operational utility: supports rapid site screening, injection schedule optimization, sensitivity studies, and multi-scenario uncertainty evaluation without requiring full simulator re-runs.
 
 Applications:
 - Rapid site screening
-- Parameter sensitivity analysis
-- Real-time optimization of injection schedules
-- Multiscenario uncertainty evaluation
+- Sensitivity and risk analysis
+- Real-time injection control prototypes
 
 ---
 
